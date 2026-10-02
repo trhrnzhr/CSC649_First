@@ -1,7 +1,12 @@
-# accepts a sentence and displays its word count
+# CSC649: My first Python experiment
 
 sentence = input("Enter a sentence: ")
 
-word_count = len(sentence.split())
+if sentence.strip() == "":
+    print("You did not enter a sentence.")
+else:
+    word_count = len(sentence.split())
+    character_count = len(sentence)
 
-print("Word count:", word_count)
+    print("Word count:", word_count)
+    print("Character count (including spaces):", character_count)
